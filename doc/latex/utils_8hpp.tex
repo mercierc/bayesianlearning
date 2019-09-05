@@ -1,0 +1,34 @@
+\hypertarget{utils_8hpp}{}\section{src/utils.hpp File Reference}
+\label{utils_8hpp}\index{src/utils.\+hpp@{src/utils.\+hpp}}
+{\ttfamily \#include $<$mlpack/prereqs.\+hpp$>$}\newline
+Include dependency graph for utils.\+hpp\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{utils_8hpp_a701cf18bdfe4726bd6939b5039c1136e}\label{utils_8hpp_a701cf18bdfe4726bd6939b5039c1136e}} 
+typedef double($\ast$ {\bfseries kernel}) (arma\+::mat, arma\+::mat, double)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{utils_8hpp_a756e27e498350ebc812a8b15849dd484}\label{utils_8hpp_a756e27e498350ebc812a8b15849dd484}} 
+void {\bfseries preprocess\+\_\+data} (const arma\+::mat \&data, const arma\+::rowvec \&responses, const bool fit\+\_\+intercept, const bool normalize, arma\+::mat \&data\+\_\+proc, arma\+::rowvec \&responses\+\_\+proc, arma\+::colvec \&data\+\_\+offset, arma\+::colvec \&data\+\_\+scale, double \&responses\+\_\+offset)
+\item 
+\mbox{\Hypertarget{utils_8hpp_a512111cf402eb6dd586ec18001fb6d90}\label{utils_8hpp_a512111cf402eb6dd586ec18001fb6d90}} 
+void {\bfseries gram\+Matrix} (const arma\+::mat \&X, const arma\+::mat \&Y, arma\+::mat \&gram\+Matrix, double($\ast$kernel\+Function)(arma\+::colvec \&, arma\+::colvec \&, double), double gamma)
+\item 
+\mbox{\Hypertarget{utils_8hpp_aa1e8332d062ec0ee53b0ea0435b2a589}\label{utils_8hpp_aa1e8332d062ec0ee53b0ea0435b2a589}} 
+double {\bfseries rbf} (arma\+::colvec \&x, arma\+::colvec \&y, double gamma)
+\item 
+\mbox{\Hypertarget{utils_8hpp_aef2f8f407ea510cc28b87640f768fd64}\label{utils_8hpp_aef2f8f407ea510cc28b87640f768fd64}} 
+double {\bfseries linear} (arma\+::colvec \&x, arma\+::colvec \&y, double gamma)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+@ \+\_\+\+\_\+\+\_\+\+\_\+\+\_\+
+
+Definition of some usefull function for preprocess the data 

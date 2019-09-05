@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbayesreg.a  CMakeFiles/bayesreg.dir/RegressionRidge.cpp.o
+/usr/bin/ranlib libbayesreg.a

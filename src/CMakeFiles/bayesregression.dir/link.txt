@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbayesregression.a  CMakeFiles/bayesregression.dir/bayesridge.cpp.o CMakeFiles/bayesregression.dir/utils.cpp.o
+/usr/bin/ranlib libbayesregression.a

@@ -1,0 +1,113 @@
+\hypertarget{classBayesianRidge}{}\section{Bayesian\+Ridge Class Reference}
+\label{classBayesianRidge}\index{Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBayesianRidge_aa73ecf5a2214a1ed168cec483f793131}{Bayesian\+Ridge} (const bool fit\+Intercept=true, const bool normalize=true)
+\item 
+void \hyperlink{classBayesianRidge_a7399d731fd6555af2dfac15c2f4eee93}{Train} (const arma\+::mat \&data, const arma\+::rowvec \&responses, const bool row\+Major=true)
+\item 
+void \hyperlink{classBayesianRidge_a408394085602d5e3faa6d915efb4075b}{Predict} (const arma\+::mat \&points, arma\+::rowvec \&predictions) const
+\item 
+void \hyperlink{classBayesianRidge_a91a6932573bc4ccec97341e37b8c9cd3}{Predict} (const arma\+::mat \&points, arma\+::rowvec \&predictions, arma\+::rowvec \&std) const
+\item 
+float \hyperlink{classBayesianRidge_a9ff299095daee3a6c521a52435fb9ebd}{Rmse} (const arma\+::mat \&data, const arma\+::rowvec \&responses) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBayesianRidge_aa73ecf5a2214a1ed168cec483f793131}\label{classBayesianRidge_aa73ecf5a2214a1ed168cec483f793131}} 
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsubsection{\texorpdfstring{Bayesian\+Ridge()}{BayesianRidge()}}
+{\footnotesize\ttfamily Bayesian\+Ridge\+::\+Bayesian\+Ridge (\begin{DoxyParamCaption}\item[{const bool}]{fit\+Intercept = {\ttfamily true},  }\item[{const bool}]{normalize = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Set the parameters to the Bayesian Ridge regression on the data. The regulariation parameter is automaticaly set to its optimal value by maximmization of the marginal likelihood.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fit\+Intercept} & Whether or not center the data according to the $\ast$ examples. \\
+\hline
+{\em normalize} & Whether or to normalize the data according to the standard deviation of each feature. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBayesianRidge_a408394085602d5e3faa6d915efb4075b}\label{classBayesianRidge_a408394085602d5e3faa6d915efb4075b}} 
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Predict@{Predict}}
+\index{Predict@{Predict}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsubsection{\texorpdfstring{Predict()}{Predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bayesian\+Ridge\+::\+Predict (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{points,  }\item[{arma\+::rowvec \&}]{predictions }\end{DoxyParamCaption}) const}
+
+Predict y\+\_\+i for each data point in the given data matrix using the currently-\/trained Bayesian Ridge model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The data points to regress on. \\
+\hline
+{\em predictions} & y, which will contained calculated values on completion. \\
+\hline
+{\em row\+Major} & Should be true if the data points matrix is row-\/major and false otherwise. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBayesianRidge_a91a6932573bc4ccec97341e37b8c9cd3}\label{classBayesianRidge_a91a6932573bc4ccec97341e37b8c9cd3}} 
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Predict@{Predict}}
+\index{Predict@{Predict}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsubsection{\texorpdfstring{Predict()}{Predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bayesian\+Ridge\+::\+Predict (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{points,  }\item[{arma\+::rowvec \&}]{predictions,  }\item[{arma\+::rowvec \&}]{std }\end{DoxyParamCaption}) const}
+
+Predict y\+\_\+i and the standard deviation of the predictive posterior distribution for each data point in the given data matrix using the currently-\/trained Bayesian Ridge estimator.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The data points to regress on. \\
+\hline
+{\em predictions} & y, which will contained calculated values on completion. \\
+\hline
+{\em std} & Standard deviations of the predictions. \\
+\hline
+{\em row\+Major} & Should be true if the data points matrix is row-\/major and false otherwise. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBayesianRidge_a9ff299095daee3a6c521a52435fb9ebd}\label{classBayesianRidge_a9ff299095daee3a6c521a52435fb9ebd}} 
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Rmse@{Rmse}}
+\index{Rmse@{Rmse}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsubsection{\texorpdfstring{Rmse()}{Rmse()}}
+{\footnotesize\ttfamily float Bayesian\+Ridge\+::\+Rmse (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{data,  }\item[{const arma\+::rowvec \&}]{responses }\end{DoxyParamCaption}) const}
+
+Compute the Root Mean Square Error between the predictions returned by the model and the true repsonses 
+\begin{DoxyParams}{Parameters}
+{\em Points} & Data points to predict \\
+\hline
+{\em responses} & A vector of targets. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+R\+M\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBayesianRidge_a7399d731fd6555af2dfac15c2f4eee93}\label{classBayesianRidge_a7399d731fd6555af2dfac15c2f4eee93}} 
+\index{Bayesian\+Ridge@{Bayesian\+Ridge}!Train@{Train}}
+\index{Train@{Train}!Bayesian\+Ridge@{Bayesian\+Ridge}}
+\subsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily void Bayesian\+Ridge\+::\+Train (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{data,  }\item[{const arma\+::rowvec \&}]{responses,  }\item[{const bool}]{row\+Major = {\ttfamily true} }\end{DoxyParamCaption})}
+
+Run \hyperlink{classBayesianRidge}{Bayesian\+Ridge} regression. The input matrix (like all mlpack matrices) should be column-\/major -- each column is an observation and each row is a dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Column-\/major input data (or row-\/major input data if row\+Major = true). \\
+\hline
+{\em responses} & A vector of targets. \\
+\hline
+{\em beta} & Vector to store the solution (the coefficients) in. \\
+\hline
+{\em transpose\+Data} & Set to false if the data is row-\/major. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{bayesridge_8hpp}{bayesridge.\+hpp}\item 
+src/\hyperlink{bayesridge_8cpp}{bayesridge.\+cpp}\end{DoxyCompactItemize}

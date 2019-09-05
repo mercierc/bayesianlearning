@@ -1,0 +1,15 @@
+\hypertarget{bayesridge_8cpp}{}\section{src/bayesridge.cpp File Reference}
+\label{bayesridge_8cpp}\index{src/bayesridge.\+cpp@{src/bayesridge.\+cpp}}
+{\ttfamily \#include \char`\"{}bayesridge.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+hpp\char`\"{}}\newline
+Include dependency graph for bayesridge.\+cpp\+:
+% FIG 0
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Clement Mercier Reicrem
+\end{DoxyAuthor}
+Implementation of Bayesian Ridge regression.
+
+mlpack is free software; you may redistribute it and/or modify it under the terms of the 3-\/clause B\+SD license. You should have received a copy of the 3-\/clause B\+SD license along with mlpack. If not, see \href{http://www.opensource.org/licenses/BSD-3-Clause}{\tt http\+://www.\+opensource.\+org/licenses/\+B\+S\+D-\/3-\/\+Clause} for more information. 

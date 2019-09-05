@@ -1,0 +1,193 @@
+\hypertarget{classrvmr_1_1RVMR}{}\section{rvmr\+:\+:R\+V\+MR$<$ Kernel\+Type $>$ Class Template Reference}
+\label{classrvmr_1_1RVMR}\index{rvmr\+::\+R\+V\+M\+R$<$ Kernel\+Type $>$@{rvmr\+::\+R\+V\+M\+R$<$ Kernel\+Type $>$}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrvmr_1_1RVMR_a91cf7d13092d73c5e7d598557246b055}{R\+V\+MR} (const Kernel\+Type \&kernel, const bool fit\+Intercept, const bool normalize)
+\item 
+\hyperlink{classrvmr_1_1RVMR_ac782c43f44440583845570410f73d04c}{R\+V\+MR} (const bool fit\+Intercept=true, const bool normalize=false)
+\item 
+void \hyperlink{classrvmr_1_1RVMR_a7393bb3c699351170d0fed02f8450fff}{Train} (const arma\+::mat \&data, const arma\+::rowvec \&responses)
+\item 
+void \hyperlink{classrvmr_1_1RVMR_a5ca8b201b2b0687eac17f46f180b02bc}{Predict} (const arma\+::mat \&points, arma\+::rowvec \&predictions) const
+\item 
+void \hyperlink{classrvmr_1_1RVMR_ada89ff05e76b1ff88c3aa121734755bc}{Predict} (const arma\+::mat \&points, arma\+::rowvec \&predictions, arma\+::rowvec \&std) const
+\item 
+void \hyperlink{classrvmr_1_1RVMR_a12461ea1a5ef6d6f5ef3c00f4904338a}{apply\+Kernel} (const arma\+::mat \&X, const arma\+::mat \&Y, arma\+::mat \&gram\+Matrix) const
+\item 
+float \hyperlink{classrvmr_1_1RVMR_ab605fc6c920b61ca4cf5c4adf79f694b}{Rmse} (const arma\+::mat \&data, const arma\+::rowvec \&responses) const
+\item 
+arma\+::vec \hyperlink{classrvmr_1_1RVMR_a3e7161c98ff23a2b95aeb49267abad6d}{get\+Coefs} () const
+\item 
+double \hyperlink{classrvmr_1_1RVMR_a011bcaf6644cb3a092fce32f45260b11}{get\+Beta} () const
+\item 
+double \hyperlink{classrvmr_1_1RVMR_ad33d2446f37b22e00a05575ad5436c89}{get\+Variance} () const
+\item 
+arma\+::uvec \hyperlink{classrvmr_1_1RVMR_abceeb8a998a8663086c30184e45fdeca}{get\+Active\+Set} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a91cf7d13092d73c5e7d598557246b055}\label{classrvmr_1_1RVMR_a91cf7d13092d73c5e7d598557246b055}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!R\+V\+MR@{R\+V\+MR}}
+\index{R\+V\+MR@{R\+V\+MR}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{R\+V\+M\+R()}{RVMR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+\hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::\hyperlink{classrvmr_1_1RVMR}{R\+V\+MR} (\begin{DoxyParamCaption}\item[{const Kernel\+Type \&}]{kernel,  }\item[{const bool}]{fit\+Intercept,  }\item[{const bool}]{normalize }\end{DoxyParamCaption})}
+
+Set the parameters of the \hyperlink{classrvmr_1_1RVMR}{R\+V\+MR} (Relevance Vector Machine for regression) object for a given kernel. There are numerous available kernels in the mlpack\+::kernel namespace. Regulariation parameters are automaticaly set to their optimal values by maximizing the marginal likelihood. Optimization is done by Evidence Maximization. 
+\begin{DoxyParams}{Parameters}
+{\em kernel} & Kernel to be used for computation. \\
+\hline
+{\em fit\+Intercept} & Whether or not center the data according to the $\ast$ examples. \\
+\hline
+{\em normalize} & Whether or to normalize the data according to the standard deviation of each feature. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_ac782c43f44440583845570410f73d04c}\label{classrvmr_1_1RVMR_ac782c43f44440583845570410f73d04c}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!R\+V\+MR@{R\+V\+MR}}
+\index{R\+V\+MR@{R\+V\+MR}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{R\+V\+M\+R()}{RVMR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+\hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::\hyperlink{classrvmr_1_1RVMR}{R\+V\+MR} (\begin{DoxyParamCaption}\item[{const bool}]{fit\+Intercept = {\ttfamily true},  }\item[{const bool}]{normalize = {\ttfamily false} }\end{DoxyParamCaption})}
+
+Set the parameters of the A\+RD regression (Automatic Relevance Determination) object without any kernel. The class Performs a linear regression with an A\+RD prior promoting sparsity in the final solution. Regulariation parameters are automaticaly set to their optimal values by the maximmization of the marginal likelihood. Optimization is done by Evidence Maximization. A\+RD regression is computed whatever the kernel type given for the initalization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fit\+Intercept} & Whether or not center the data according to the examples. \\
+\hline
+{\em normalize} & Whether or to normalize the data according to the standard deviation of each feature. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a12461ea1a5ef6d6f5ef3c00f4904338a}\label{classrvmr_1_1RVMR_a12461ea1a5ef6d6f5ef3c00f4904338a}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!apply\+Kernel@{apply\+Kernel}}
+\index{apply\+Kernel@{apply\+Kernel}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{apply\+Kernel()}{applyKernel()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+void \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::apply\+Kernel (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{X,  }\item[{const arma\+::mat \&}]{Y,  }\item[{arma\+::mat \&}]{gram\+Matrix }\end{DoxyParamCaption}) const}
+
+Apply the kernel function between the column vectors of two matrices X and Y. If X=Y this function comptutes the Gramian matrix. 
+\begin{DoxyParams}{Parameters}
+{\em X} & Matrix of dimension $ M \times N1 $. \\
+\hline
+{\em Y} & Matrix of dimension $ M \times N2 $. \\
+\hline
+{\em gram\+Matrix} & of dimension $N1 \times N2$. Elements are equal to kernel.\+Evaluate( $ x_{i} $, $ y_{j} $). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_abceeb8a998a8663086c30184e45fdeca}\label{classrvmr_1_1RVMR_abceeb8a998a8663086c30184e45fdeca}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!get\+Active\+Set@{get\+Active\+Set}}
+\index{get\+Active\+Set@{get\+Active\+Set}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{get\+Active\+Set()}{getActiveSet()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+arma\+::uvec \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::get\+Active\+Set (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the indices of the active basis functions.
+
+\begin{DoxyReturn}{Returns}
+adtive\+Set 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a011bcaf6644cb3a092fce32f45260b11}\label{classrvmr_1_1RVMR_a011bcaf6644cb3a092fce32f45260b11}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!get\+Beta@{get\+Beta}}
+\index{get\+Beta@{get\+Beta}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{get\+Beta()}{getBeta()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+double \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::get\+Beta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the precesion (or inverse variance) beta of the model. \begin{DoxyReturn}{Returns}
+$ \beta $ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a3e7161c98ff23a2b95aeb49267abad6d}\label{classrvmr_1_1RVMR_a3e7161c98ff23a2b95aeb49267abad6d}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!get\+Coefs@{get\+Coefs}}
+\index{get\+Coefs@{get\+Coefs}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{get\+Coefs()}{getCoefs()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+arma\+::vec \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::get\+Coefs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the coefficents of the full solution vector. The 0 are associated to the inactive basis functions. \mbox{\Hypertarget{classrvmr_1_1RVMR_ad33d2446f37b22e00a05575ad5436c89}\label{classrvmr_1_1RVMR_ad33d2446f37b22e00a05575ad5436c89}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!get\+Variance@{get\+Variance}}
+\index{get\+Variance@{get\+Variance}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{get\+Variance()}{getVariance()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+double \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::get\+Variance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the estimated variance. \begin{DoxyReturn}{Returns}
+1.\+0 / $ \beta $ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a5ca8b201b2b0687eac17f46f180b02bc}\label{classrvmr_1_1RVMR_a5ca8b201b2b0687eac17f46f180b02bc}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!Predict@{Predict}}
+\index{Predict@{Predict}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{Predict()}{Predict()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+void \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::Predict (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{points,  }\item[{arma\+::rowvec \&}]{predictions }\end{DoxyParamCaption}) const}
+
+Predict $\hat{y}_{i}$ for each data point in the given data matrix using the currently-\/trained R\+VM model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The data points used for the training step. \\
+\hline
+{\em predictions} & y, which will contained calculated values on completion. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_ada89ff05e76b1ff88c3aa121734755bc}\label{classrvmr_1_1RVMR_ada89ff05e76b1ff88c3aa121734755bc}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!Predict@{Predict}}
+\index{Predict@{Predict}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{Predict()}{Predict()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+void \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::Predict (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{points,  }\item[{arma\+::rowvec \&}]{predictions,  }\item[{arma\+::rowvec \&}]{std }\end{DoxyParamCaption}) const}
+
+Predict $\hat{y}_{i}$ and the standard deviation of the predictive posterior distribution for each data point in the given data matrix using the currently-\/trained R\+VM model.
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & The data points to regress on. \\
+\hline
+{\em predictions} & y, which will contained calculated values on completion. \\
+\hline
+{\em std} & Standard deviations of the predictions. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_ab605fc6c920b61ca4cf5c4adf79f694b}\label{classrvmr_1_1RVMR_ab605fc6c920b61ca4cf5c4adf79f694b}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!Rmse@{Rmse}}
+\index{Rmse@{Rmse}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{Rmse()}{Rmse()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+float \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::Rmse (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{data,  }\item[{const arma\+::rowvec \&}]{responses }\end{DoxyParamCaption}) const}
+
+Compute the Root Mean Square Error between the predictions returned by the model and the true repsonses. 
+\begin{DoxyParams}{Parameters}
+{\em Points} & Data points to predict. \\
+\hline
+{\em responses} & A vector of targets. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+R\+M\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvmr_1_1RVMR_a7393bb3c699351170d0fed02f8450fff}\label{classrvmr_1_1RVMR_a7393bb3c699351170d0fed02f8450fff}} 
+\index{rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}!Train@{Train}}
+\index{Train@{Train}!rvmr\+::\+R\+V\+MR@{rvmr\+::\+R\+V\+MR}}
+\subsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily template$<$typename Kernel\+Type $>$ \\
+void \hyperlink{classrvmr_1_1RVMR}{rvmr\+::\+R\+V\+MR}$<$ Kernel\+Type $>$\+::Train (\begin{DoxyParamCaption}\item[{const arma\+::mat \&}]{data,  }\item[{const arma\+::rowvec \&}]{responses }\end{DoxyParamCaption})}
+
+Run Relevance Vector Machine for regression. The input matrix (like all mlpack matrices) should be column-\/major -- each column is an observation and each row is a dimension.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Column-\/major input data (or row-\/major input data if row\+Major = true). \\
+\hline
+{\em responses} & Vector of targets. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{rvmr_8hpp}{rvmr.\+hpp}\item 
+src/rvmr\+\_\+impl.\+hpp\end{DoxyCompactItemize}

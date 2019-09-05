@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/Ex1.dir/Test.cpp.o  -o Ex1 src/libbayesregression.a -lmlpack -larmadillo -lboost_serialization -lboost_program_options -lgomp -lpthread 

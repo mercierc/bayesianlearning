@@ -1,0 +1,11 @@
+\form#0:$y_i$
+\form#1:$ M \times N1 $
+\form#2:$ M \times N2 $
+\form#3:$N1 \times N2$
+\form#4:$ x_{i} $
+\form#5:$ y_{j} $
+\form#6:$y_{i}$
+\form#7:$ beta $
+\form#8:$\haty_{i}$
+\form#9:$\hat{y}_{i}$
+\form#10:$ \beta $

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/clementm/Documents/Documents/c++/taton/src/RegressionRidge.cpp
+RegressionRidge.hpp
+/home/clementm/Documents/Documents/c++/taton/src/RegressionRidge.hpp
+
+/home/clementm/Documents/Documents/c++/taton/src/RegressionRidge.hpp
+iostream
+-
+

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp
+bayesridge.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
+utils.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
+mlpack/prereqs.hpp
+-
+
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp
+utils.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+stdexcept
+-
+
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+mlpack/prereqs.hpp
+-
+
