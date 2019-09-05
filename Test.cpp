@@ -59,58 +59,58 @@ int main()
     
 
 
-  // // RVM ARD regression mode.
-  // std::cout << "RVM, ARD regression mode "<< std::endl;
-  // start = std::chrono::system_clock::now();
-  // RVMR<kernel::LinearKernel> ARDRegression(true, false);
-  // ARDRegression.Train(X,y);
-  // end = std::chrono::system_clock::now();
-  // diff = end - start;
-  // std::cout << "getBeta = " << ARDRegression.getBeta() << std::endl;
-  // std::cout << "time = " << diff.count() << " s\n";
+  // RVM ARD regression mode.
+  std::cout << "RVM, ARD regression mode "<< std::endl;
+  start = std::chrono::system_clock::now();
+  RVMR<kernel::LinearKernel> ARDRegression(true, false);
+  ARDRegression.Train(X,y);
+  end = std::chrono::system_clock::now();
+  diff = end - start;
+  std::cout << "getBeta = " << ARDRegression.getBeta() << std::endl;
+  std::cout << "time = " << diff.count() << " s\n";
 
-  // rmsetrain = ARDRegression.Rmse(X,y);
-  // rmsetest = ARDRegression.Rmse(Xtest,ytest);
+  rmsetrain = ARDRegression.Rmse(X,y);
+  rmsetest = ARDRegression.Rmse(Xtest,ytest);
     
-  // std::cout << "rmsetrain = "<< rmsetrain << std::endl;
-  // std::cout << "rmsetest = "<< rmsetest << "\n"<< std::endl;
+  std::cout << "rmsetrain = "<< rmsetrain << std::endl;
+  std::cout << "rmsetest = "<< rmsetest << "\n"<< std::endl;
 
   
 
-  // // RVM Linear kernel.
-  // std::cout << "RVM Regression Linear kernel"<< std::endl;
-  // start = std::chrono::system_clock::now();
-  // kernel::LinearKernel kernelLin;
-  // RVMR<kernel::LinearKernel> RVMLinear(kernelLin, true, false);
-  // RVMLinear.Train(X,y);
-  // end = std::chrono::system_clock::now();
-  // diff = end - start;
-  // std::cout << "getBeta = " << RVMLinear.getBeta() << std::endl;
-  // std::cout << "time = " << diff.count() << " s\n";
+  // RVM Linear kernel.
+  std::cout << "RVM Regression Linear kernel"<< std::endl;
+  start = std::chrono::system_clock::now();
+  kernel::LinearKernel kernelLin;
+  RVMR<kernel::LinearKernel> RVMLinear(kernelLin, true, false);
+  RVMLinear.Train(X,y);
+  end = std::chrono::system_clock::now();
+  diff = end - start;
+  std::cout << "getBeta = " << RVMLinear.getBeta() << std::endl;
+  std::cout << "time = " << diff.count() << " s\n";
 
-  // rmsetrain = RVMLinear.Rmse(X,y);
-  // rmsetest = RVMLinear.Rmse(Xtest,ytest);
+  rmsetrain = RVMLinear.Rmse(X,y);
+  rmsetest = RVMLinear.Rmse(Xtest,ytest);
     
-  // std::cout << "rmsetrain = "<< rmsetrain << std::endl;
-  // std::cout << "rmsetest = "<< rmsetest << "\n"<<  std::endl;
+  std::cout << "rmsetrain = "<< rmsetrain << std::endl;
+  std::cout << "rmsetest = "<< rmsetest << "\n"<<  std::endl;
 
 
 
-  // // RVM Gaussian kernel.
-  // std::cout << "RVM Regression Gaussian kernel"<< std::endl;
-  // start = std::chrono::system_clock::now();
-  // kernel::GaussianKernel kernelGaussian;
-  // RVMR<kernel::GaussianKernel> RVMrbf(kernelGaussian, true, false);
-  // RVMrbf.Train(X,y);
-  // end = std::chrono::system_clock::now();
-  // diff = end - start;
-  // std::cout << "time = " << diff.count() << " s\n";
+  // RVM Gaussian kernel.
+  std::cout << "RVM Regression Gaussian kernel"<< std::endl;
+  start = std::chrono::system_clock::now();
+  kernel::GaussianKernel kernelGaussian;
+  RVMR<kernel::GaussianKernel> RVMrbf(kernelGaussian, true, false);
+  RVMrbf.Train(X,y);
+  end = std::chrono::system_clock::now();
+  diff = end - start;
+  std::cout << "time = " << diff.count() << " s\n";
 
-  // rmsetrain = RVMrbf.Rmse(X,y);
-  // rmsetest = RVMrbf.Rmse(Xtest,ytest);
+  rmsetrain = RVMrbf.Rmse(X,y);
+  rmsetest = RVMrbf.Rmse(Xtest,ytest);
 
-  // std::cout << "rmsetrain = "<< rmsetrain << std::endl;
-  // std::cout << "rmsetest = "<< rmsetest << "\n"<< std::endl;
+  std::cout << "rmsetrain = "<< rmsetrain << std::endl;
+  std::cout << "rmsetest = "<< rmsetest << "\n"<< std::endl;
 
   std::cout << "end " << std::endl;
 }
