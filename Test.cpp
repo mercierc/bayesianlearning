@@ -18,25 +18,38 @@ using namespace rvmr;
 int main()
 {
 
-  std::cout <<"\n CXX Bayesian regression"<< std::endl;
+  std::cout <<"CXX Bayesian regressions.\n"<< std::endl;
   // First, load the data.
   arma::mat X, Xtest;
   arma::rowvec y, ytest;
-  // data::Load("./data/corn_m5_train.csv",X,false,true);  
-  // data::Load("./data/corn_m5_test.csv",Xtest,false,true);  
-  // data::Load("./data/corn_y_train.csv",y,false,true);
-  // data::Load("./data/corn_y_test.csv",ytest,false,true);  
-  
-  data::Load("./data/synth_train.csv",X,false,true);  
-  data::Load("./data/synth_test.csv",Xtest,false,true);  
-  data::Load("./data/synth_y_train.csv",y,false,true);
-  data::Load("./data/synth_y_test.csv",ytest,false,true);  
-
-  arma::rowvec predtrain, predtest, stdtrain, stdtest;
   double rmsetrain, rmsetest;
-  
-  std::cout << X.n_rows << "x" << X.n_cols << std::endl;
 
+  // Comment the dataset that you don't want to use.
+
+  std::cout<< "Corn dataset.\n"
+	   << "http://www.eigenvector.com/data/Corn/"
+	   << std::endl;
+  data::Load("./data/corn_m5_train.csv",X,false,true);  
+  data::Load("./data/corn_m5_test.csv",Xtest,false,true);  
+  data::Load("./data/corn_y_train.csv",y,false,true);
+  data::Load("./data/corn_y_test.csv",ytest,false,true);  
+
+  // std::cout<< "Synthetic dataset.\n" 
+  // 	   << "Only the first ten features are non equal to 0."
+  // 	   << std::endl;
+  // data::Load("./data/synth_train.csv",X,false,true);  
+  // data::Load("./data/synth_test.csv",Xtest,false,true);  
+  // data::Load("./data/synth_y_train.csv",y,false,true);
+  // data::Load("./data/synth_y_test.csv",ytest,false,true);  
+
+  // arma::rowvec predtrain, predtest, stdtrain, stdtest;
+  // double rmsetrain, rmsetest;
+  
+  std::cout << "Dimension of tyhe train set ->"
+	    << X.n_rows
+	    << "x"
+	    << X.n_cols
+	    << std::endl;
 
   
   // Bayesian Ridge regression.
@@ -46,7 +59,6 @@ int main()
   bayesRidge.Train(X,y);
   auto end = std::chrono::system_clock::now();
   std::chrono::duration<double> diff = end - start;
-  std::cout << "getBeta = " << bayesRidge.getBeta() << std::endl;
   std::cout << "time = " << diff.count() << " s\n";
   
   rmsetrain = bayesRidge.Rmse(X, y); 
@@ -54,10 +66,6 @@ int main()
 
   std::cout << "rmsetrain = "<< rmsetrain << std::endl;
   std::cout << "rmsetest = "<< rmsetest << "\n"<<  std::endl;
-
-  std::cout << "Solution"<< bayesRidge.getCoefs() << "\n"<<  std::endl;
-    
-
 
   // RVM ARD regression mode.
   std::cout << "RVM, ARD regression mode "<< std::endl;

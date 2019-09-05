@@ -58,7 +58,6 @@ void BayesianRidge::Train(const arma::mat& data,
   arma::eig_sym(eigval, eigvec, phiphiT);
    
   unsigned short p = data.n_rows, n = data.n_cols;
-  std::cout << "pxn = " << p <<"x"<< n << std::endl;
   // Initialize the hyperparameters and
   // begin with an infinitely broad prior.
   this->alpha = 1e-6;
@@ -87,19 +86,17 @@ void BayesianRidge::Train(const arma::mat& data,
       // Update alpha.
       eigvali = eigval * this->beta;
       gamma = sum(eigvali / (this->alpha + eigvali));
-      std::cout << "gamma  = "<<gamma << std::endl;
       this->alpha = gamma / dot(this->omega.t(), this->omega);
 
       // Update beta.
       temp = t - this->omega.t() * phi;
       this->beta = (n - gamma) / dot(temp, temp);
-
+      
       // Comptute the stopping criterion.
       deltaAlpha += this->alpha;
       deltaBeta += this->beta;
       crit = abs(deltaAlpha/this->alpha + deltaBeta/this->beta);
       i++;
-      std::cout << i << std::endl;
     }
 }
 
