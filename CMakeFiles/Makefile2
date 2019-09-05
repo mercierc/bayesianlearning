@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
 # Target rules for target CMakeFiles/Ex1.dir
 
 # All Build rule for target.
-CMakeFiles/Ex1.dir/all: src/CMakeFiles/bayesregression.dir/all
+CMakeFiles/Ex1.dir/all: src/CMakeFiles/bayesianlearning.dir/all
 	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/depend
 	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=1,2 "Built target Ex1"
@@ -100,12 +100,12 @@ clean: CMakeFiles/Ex1.dir/clean
 # Directory level rules for directory src
 
 # Convenience name for "all" pass in the directory.
-src/all: src/CMakeFiles/bayesregression.dir/all
+src/all: src/CMakeFiles/bayesianlearning.dir/all
 
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
-src/clean: src/CMakeFiles/bayesregression.dir/clean
+src/clean: src/CMakeFiles/bayesianlearning.dir/clean
 
 .PHONY : src/clean
 
@@ -115,39 +115,39 @@ src/preinstall:
 .PHONY : src/preinstall
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/bayesregression.dir
+# Target rules for target src/CMakeFiles/bayesianlearning.dir
 
 # All Build rule for target.
-src/CMakeFiles/bayesregression.dir/all:
-	$(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/depend
-	$(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=3,4,5 "Built target bayesregression"
-.PHONY : src/CMakeFiles/bayesregression.dir/all
+src/CMakeFiles/bayesianlearning.dir/all:
+	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/depend
+	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=3,4,5 "Built target bayesianlearning"
+.PHONY : src/CMakeFiles/bayesianlearning.dir/all
 
 # Include target in all.
-all: src/CMakeFiles/bayesregression.dir/all
+all: src/CMakeFiles/bayesianlearning.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/bayesregression.dir/rule: cmake_check_build_system
+src/CMakeFiles/bayesianlearning.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesregression.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesianlearning.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
-.PHONY : src/CMakeFiles/bayesregression.dir/rule
+.PHONY : src/CMakeFiles/bayesianlearning.dir/rule
 
 # Convenience name for target.
-bayesregression: src/CMakeFiles/bayesregression.dir/rule
+bayesianlearning: src/CMakeFiles/bayesianlearning.dir/rule
 
-.PHONY : bayesregression
-
-# clean rule for target.
-src/CMakeFiles/bayesregression.dir/clean:
-	$(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/clean
-.PHONY : src/CMakeFiles/bayesregression.dir/clean
+.PHONY : bayesianlearning
 
 # clean rule for target.
-clean: src/CMakeFiles/bayesregression.dir/clean
+src/CMakeFiles/bayesianlearning.dir/clean:
+	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/clean
+.PHONY : src/CMakeFiles/bayesianlearning.dir/clean
+
+# clean rule for target.
+clean: src/CMakeFiles/bayesianlearning.dir/clean
 
 .PHONY : clean
 

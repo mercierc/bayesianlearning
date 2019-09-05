@@ -130,7 +130,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=taton
+CMAKE_PROJECT_NAME:STATIC=bayesianlearning
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -181,6 +181,12 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+Ex1_BINARY_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack/test
+
+//Value Computed by CMake
+Ex1_SOURCE_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack/test
+
 //CXX compiler flags for OpenMP parallelization
 OpenMP_CXX_FLAGS:STRING=-fopenmp
 
@@ -199,6 +205,15 @@ OpenMP_gomp_LIBRARY:FILEPATH=/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so
 //Path to the pthread library for OpenMP
 OpenMP_pthread_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
 
+//Value Computed by CMake
+bayesianlearning_BINARY_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
+
+//Dependencies for target
+bayesianlearning_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+bayesianlearning_SOURCE_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
+
 //Dependencies for target
 bayesregression_LIB_DEPENDS:STATIC=
 
@@ -207,6 +222,12 @@ taton_BINARY_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
 
 //Value Computed by CMake
 taton_SOURCE_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
+
+//Value Computed by CMake
+tfvd_BINARY_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
+
+//Value Computed by CMake
+tfvd_SOURCE_DIR:STATIC=/home/cmercier/Documents/c++/taton_mlpack
 
 
 ########################
@@ -349,11 +370,11 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding OpenMP
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP:INTERNAL=[TRUE][TRUE][c ][v()]
 //Details about finding OpenMP_C
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_C:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v()]
 //Details about finding OpenMP_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v4.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenMP_CXX:INTERNAL=[-fopenmp][/usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so][/usr/lib/x86_64-linux-gnu/libpthread.so][v()]
 //Result of TRY_COMPILE
 OpenMP_COMPILE_RESULT_CXX_fopenmp:INTERNAL=TRUE
 //Result of TRY_COMPILE

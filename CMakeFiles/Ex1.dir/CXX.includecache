@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cmercier/Documents/c++/taton_mlpack/Test.cpp
+/home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp
 iostream
 -
 math.h
@@ -20,29 +20,29 @@ mlpack/core/kernels/linear_kernel.hpp
 mlpack/core/kernels/gaussian_kernel.hpp
 -
 bayesridge.hpp
-/home/cmercier/Documents/c++/taton_mlpack/bayesridge.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
 rvmr.hpp
-/home/cmercier/Documents/c++/taton_mlpack/rvmr.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/rvmr.hpp
 utils.hpp
-/home/cmercier/Documents/c++/taton_mlpack/utils.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
 
-src/bayesridge.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
 mlpack/prereqs.hpp
 -
 
-src/rvmr.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/rvmr.hpp
 mlpack/prereqs.hpp
 -
 utils.hpp
-src/utils.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
 rvmr_impl.hpp
-src/rvmr_impl.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/rvmr_impl.hpp
 
-src/rvmr_impl.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/rvmr_impl.hpp
 rvmr.hpp
-src/rvmr.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/rvmr.hpp
 
-src/utils.hpp
+/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
 mlpack/prereqs.hpp
 -
 

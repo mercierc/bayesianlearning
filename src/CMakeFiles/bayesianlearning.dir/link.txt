@@ -1,0 +1,2 @@
+/usr/bin/ar qc libbayesianlearning.a  CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o CMakeFiles/bayesianlearning.dir/utils.cpp.o
+/usr/bin/ranlib libbayesianlearning.a

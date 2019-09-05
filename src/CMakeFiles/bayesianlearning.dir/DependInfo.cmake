@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp" "/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles/Ex1.dir/src/Test.cpp.o"
+  "/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp" "/home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o"
+  "/home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp" "/home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +16,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

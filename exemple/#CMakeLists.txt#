@@ -1,7 +1,0 @@
-include_directories (${CMAKE_SOURCE_DIR}/src)
-
-file(
-	GLOB 
-	usage_examples
-	*.cpp
-)

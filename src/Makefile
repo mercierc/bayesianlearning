@@ -157,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/bayesregression.dir/rule:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesregression.dir/rule
-.PHONY : src/CMakeFiles/bayesregression.dir/rule
+src/CMakeFiles/bayesianlearning.dir/rule:
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesianlearning.dir/rule
+.PHONY : src/CMakeFiles/bayesianlearning.dir/rule
 
 # Convenience name for target.
-bayesregression: src/CMakeFiles/bayesregression.dir/rule
+bayesianlearning: src/CMakeFiles/bayesianlearning.dir/rule
 
-.PHONY : bayesregression
+.PHONY : bayesianlearning
 
 # fast build rule for target.
-bayesregression/fast:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/build
-.PHONY : bayesregression/fast
+bayesianlearning/fast:
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
+.PHONY : bayesianlearning/fast
 
 bayesridge.o: bayesridge.cpp.o
 
@@ -177,7 +177,7 @@ bayesridge.o: bayesridge.cpp.o
 
 # target to build an object file
 bayesridge.cpp.o:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/bayesridge.cpp.o
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o
 .PHONY : bayesridge.cpp.o
 
 bayesridge.i: bayesridge.cpp.i
@@ -186,7 +186,7 @@ bayesridge.i: bayesridge.cpp.i
 
 # target to preprocess a source file
 bayesridge.cpp.i:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/bayesridge.cpp.i
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i
 .PHONY : bayesridge.cpp.i
 
 bayesridge.s: bayesridge.cpp.s
@@ -195,7 +195,7 @@ bayesridge.s: bayesridge.cpp.s
 
 # target to generate assembly for a file
 bayesridge.cpp.s:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/bayesridge.cpp.s
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s
 .PHONY : bayesridge.cpp.s
 
 utils.o: utils.cpp.o
@@ -204,7 +204,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/utils.cpp.o
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -213,7 +213,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/utils.cpp.i
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -222,7 +222,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesregression.dir/build.make src/CMakeFiles/bayesregression.dir/utils.cpp.s
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -233,7 +233,7 @@ help:
 	@echo "... depend"
 	@echo "... install/strip"
 	@echo "... edit_cache"
-	@echo "... bayesregression"
+	@echo "... bayesianlearning"
 	@echo "... rebuild_cache"
 	@echo "... list_install_components"
 	@echo "... install/local"

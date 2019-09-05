@@ -8,9 +8,9 @@ project(bayesianlearning)
 include_directories("${PROJECT_SOURCE_DIR}/src")
 
 add_subdirectory(src)
-
+add_subdirectory(bin)
 set(SRCS
-  ./src/Test.cpp
+  Test.cpp
   )
 
 set(EXECUTABLE_OUTPUT_PATH "bin")
@@ -20,7 +20,7 @@ add_executable(Ex1 ${SRCS})
 find_package(OpenMP)
 
 target_link_libraries(Ex1 PUBLIC
-  bayesianlearning
+  bayesregression
   -lmlpack
   -larmadillo
   -lboost_serialization

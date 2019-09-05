@@ -68,6 +68,40 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -90,50 +124,16 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles /home/cmercier/Documents/c++/taton_mlpack/bin/CMakeFiles/progress.marks
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 bin/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 bin/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,71 +143,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 bin/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named Ex1
-
-# Build rule for target.
-Ex1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Ex1
-.PHONY : Ex1
-
-# fast build rule for target.
-Ex1/fast:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/build
-.PHONY : Ex1/fast
-
-#=============================================================================
-# Target rules for targets named bayesianlearning
-
-# Build rule for target.
-bayesianlearning: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bayesianlearning
-.PHONY : bayesianlearning
-
-# fast build rule for target.
-bayesianlearning/fast:
-	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
-.PHONY : bayesianlearning/fast
-
-src/Test.o: src/Test.cpp.o
-
-.PHONY : src/Test.o
-
-# target to build an object file
-src/Test.cpp.o:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.o
-.PHONY : src/Test.cpp.o
-
-src/Test.i: src/Test.cpp.i
-
-.PHONY : src/Test.i
-
-# target to preprocess a source file
-src/Test.cpp.i:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.i
-.PHONY : src/Test.cpp.i
-
-src/Test.s: src/Test.cpp.s
-
-.PHONY : src/Test.s
-
-# target to generate assembly for a file
-src/Test.cpp.s:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.s
-.PHONY : src/Test.cpp.s
 
 # Help Target
 help:
@@ -216,16 +163,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... Ex1"
-	@echo "... install"
-	@echo "... bayesianlearning"
-	@echo "... src/Test.o"
-	@echo "... src/Test.i"
-	@echo "... src/Test.s"
 .PHONY : help
 
 
@@ -237,6 +179,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
