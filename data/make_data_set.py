@@ -9,9 +9,9 @@ from regression_time import RVMRegression
 import matplotlib.pyplot as plt
 np.random.seed(8)
 
-N,M = 500,5
+N,M = 500,100
 Ntest,Mtest = 200,M
-s=3
+s=10
 X = np.random.uniform(-10,10,N*M).reshape(N,M)
 Xtest = np.random.uniform(-10,10,Ntest*Mtest).reshape(Ntest,Mtest)
 
@@ -25,7 +25,7 @@ ytest = Xtest.dot(coef)+noisetest
 
 print('nxp = ',X.shape[0],"x",X.shape[1])
 start = time.time()
-bayes = BayesianRidge(fit_intercept=True, scale=False).fit(X,y)
+bayes = RVMRegression(fit_intercept=True, scale=False, kernel='rbf').fit(X,y)
 end = time.time()
 pred = bayes.predict(X)
 predtest = bayes.predict(Xtest)
