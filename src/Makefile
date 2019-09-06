@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_SOURCE_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_BINARY_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles /home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/progress.marks
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles /home/clementm/Documents/Documents/c++/bayesianlearning/src/CMakeFiles/progress.marks
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/bayesianlearning.dir/rule:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesianlearning.dir/rule
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesianlearning.dir/rule
 .PHONY : src/CMakeFiles/bayesianlearning.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ bayesianlearning: src/CMakeFiles/bayesianlearning.dir/rule
 
 # fast build rule for target.
 bayesianlearning/fast:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
 .PHONY : bayesianlearning/fast
 
 bayesridge.o: bayesridge.cpp.o
@@ -177,7 +177,7 @@ bayesridge.o: bayesridge.cpp.o
 
 # target to build an object file
 bayesridge.cpp.o:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o
 .PHONY : bayesridge.cpp.o
 
 bayesridge.i: bayesridge.cpp.i
@@ -186,7 +186,7 @@ bayesridge.i: bayesridge.cpp.i
 
 # target to preprocess a source file
 bayesridge.cpp.i:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i
 .PHONY : bayesridge.cpp.i
 
 bayesridge.s: bayesridge.cpp.s
@@ -195,7 +195,7 @@ bayesridge.s: bayesridge.cpp.s
 
 # target to generate assembly for a file
 bayesridge.cpp.s:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s
 .PHONY : bayesridge.cpp.s
 
 utils.o: utils.cpp.o
@@ -204,7 +204,7 @@ utils.o: utils.cpp.o
 
 # target to build an object file
 utils.cpp.o:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.o
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.o
 .PHONY : utils.cpp.o
 
 utils.i: utils.cpp.i
@@ -213,7 +213,7 @@ utils.i: utils.cpp.i
 
 # target to preprocess a source file
 utils.cpp.i:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.i
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.i
 .PHONY : utils.cpp.i
 
 utils.s: utils.cpp.s
@@ -222,7 +222,7 @@ utils.s: utils.cpp.s
 
 # target to generate assembly for a file
 utils.cpp.s:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.s
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/utils.cpp.s
 .PHONY : utils.cpp.s
 
 # Help Target
@@ -255,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.cpp
 bayesridge.hpp
-/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.hpp
 utils.hpp
-/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.hpp
 
-/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.hpp
 mlpack/prereqs.hpp
 -
 
-/home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.cpp
 utils.hpp
-/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.hpp
 stdexcept
 -
 
-/home/cmercier/Documents/c++/taton_mlpack/src/utils.hpp
+/home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.hpp
 mlpack/prereqs.hpp
 -
 

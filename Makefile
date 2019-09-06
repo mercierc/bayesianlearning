@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_SOURCE_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_BINARY_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -182,32 +182,32 @@ bayesianlearning/fast:
 	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
 .PHONY : bayesianlearning/fast
 
-src/bayesian_ridge_test.o: src/bayesian_ridge_test.cpp.o
+src/ard_regression_test.o: src/ard_regression_test.cpp.o
 
-.PHONY : src/bayesian_ridge_test.o
+.PHONY : src/ard_regression_test.o
 
 # target to build an object file
-src/bayesian_ridge_test.cpp.o:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o
-.PHONY : src/bayesian_ridge_test.cpp.o
+src/ard_regression_test.cpp.o:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/ard_regression_test.cpp.o
+.PHONY : src/ard_regression_test.cpp.o
 
-src/bayesian_ridge_test.i: src/bayesian_ridge_test.cpp.i
+src/ard_regression_test.i: src/ard_regression_test.cpp.i
 
-.PHONY : src/bayesian_ridge_test.i
+.PHONY : src/ard_regression_test.i
 
 # target to preprocess a source file
-src/bayesian_ridge_test.cpp.i:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.i
-.PHONY : src/bayesian_ridge_test.cpp.i
+src/ard_regression_test.cpp.i:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/ard_regression_test.cpp.i
+.PHONY : src/ard_regression_test.cpp.i
 
-src/bayesian_ridge_test.s: src/bayesian_ridge_test.cpp.s
+src/ard_regression_test.s: src/ard_regression_test.cpp.s
 
-.PHONY : src/bayesian_ridge_test.s
+.PHONY : src/ard_regression_test.s
 
 # target to generate assembly for a file
-src/bayesian_ridge_test.cpp.s:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.s
-.PHONY : src/bayesian_ridge_test.cpp.s
+src/ard_regression_test.cpp.s:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/ard_regression_test.cpp.s
+.PHONY : src/ard_regression_test.cpp.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... Ex1"
 	@echo "... install"
 	@echo "... bayesianlearning"
-	@echo "... src/bayesian_ridge_test.o"
-	@echo "... src/bayesian_ridge_test.i"
-	@echo "... src/bayesian_ridge_test.s"
+	@echo "... src/ard_regression_test.o"
+	@echo "... src/ard_regression_test.i"
+	@echo "... src/ard_regression_test.s"
 .PHONY : help
 
 

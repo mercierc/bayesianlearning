@@ -26,24 +26,22 @@ int main()
 
   // Comment the dataset that you don't want to use.
 
-  std::cout<< "Corn dataset.\n"
-	   << "http://www.eigenvector.com/data/Corn/"
-	   << std::endl;
-  data::Load("./data/corn_m5_train.csv",X,false,true);  
-  data::Load("./data/corn_m5_test.csv",Xtest,false,true);  
-  data::Load("./data/corn_y_train.csv",y,false,true);
-  data::Load("./data/corn_y_test.csv",ytest,false,true);  
-
-  // std::cout<< "Synthetic dataset.\n" 
-  // 	   << "Only the first ten features are non equal to 0."
+  // std::cout<< "Corn dataset.\n"
+  // 	   << "http://www.eigenvector.com/data/Corn/"
   // 	   << std::endl;
-  // data::Load("./data/synth_train.csv",X,false,true);  
-  // data::Load("./data/synth_test.csv",Xtest,false,true);  
-  // data::Load("./data/synth_y_train.csv",y,false,true);
-  // data::Load("./data/synth_y_test.csv",ytest,false,true);  
+  // data::Load("./data/corn_m5_train.csv",X,false,true);  
+  // data::Load("./data/corn_m5_test.csv",Xtest,false,true);  
+  // data::Load("./data/corn_y_train.csv",y,false,true);
+  // data::Load("./data/corn_y_test.csv",ytest,false,true);  
 
-  // arma::rowvec predtrain, predtest, stdtrain, stdtest;
-  // double rmsetrain, rmsetest;
+  std::cout<< "Synthetic dataset.\n" 
+  	   << "Only the first ten features are non equal to 0."
+  	   << std::endl;
+  data::Load("./data/synth_train.csv",X,false,true);  
+  data::Load("./data/synth_test.csv",Xtest,false,true);  
+  data::Load("./data/synth_y_train.csv",y,false,true);
+  data::Load("./data/synth_y_test.csv",ytest,false,true);  
+
   
   std::cout << "Dimension of tyhe train set ->"
 	    << X.n_rows
@@ -64,6 +62,7 @@ int main()
   rmsetrain = bayesRidge.Rmse(X, y); 
   rmsetest = bayesRidge.Rmse(Xtest, ytest);
 
+  std::cout << "getBeta = " << bayesRidge.getBeta() << std::endl;
   std::cout << "rmsetrain = "<< rmsetrain << std::endl;
   std::cout << "rmsetest = "<< rmsetest << "\n"<<  std::endl;
 

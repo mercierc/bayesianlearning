@@ -29,11 +29,12 @@ BOOST_AUTO_TEST_CASE(BayesianRidgeRegressionTest)
 
   // The RMSE are set according to the results obtained by the current
   // implementation on the following dataset.
-  // RMSE are bad because the the prior imposed for the bayesian ridge 
-  // is not appropriate to recover sparse solution.
-  // y = Xw + noise, noise->Normal(0,1/beta), where beta=40 is the
+    // y = Xw + noise, noise->Normal(0,1/beta), where beta=40 is the
   // precision and w is a sparse vector to recover with the ten first elements
   // non zero.
+  // RMSE are bad because the the prior imposed for the bayesian ridge 
+  // is not appropriate to recover sparse solution.
+
   double RMSETRAIN = 6.66561e-05, RMSETEST = 37.0611;
   
   std::cout<< "\nSynthetic dataset.\n" 

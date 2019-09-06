@@ -10,7 +10,9 @@ include_directories("${PROJECT_SOURCE_DIR}/src")
 add_subdirectory(src)
 
 set(SRCS
-  ./src/bayesian_ridge_test.cpp
+  #./src/bayesian_ridge_test.cpp
+  ./src/ard_regression_test.cpp
+  #./src/Test.cpp
   )
 
 set(EXECUTABLE_OUTPUT_PATH "bin")

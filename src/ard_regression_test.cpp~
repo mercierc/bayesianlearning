@@ -21,27 +21,20 @@ using namespace mlpack;
 using namespace rvmr;
 
 
-BOOST_AUTO_TEST_CASE(BayesianRidgeRegressionTest)
+BOOST_AUTO_TEST_CASE(RVMegressionTest)
 {
   // First, load the data.
   arma::mat Xtrain, Xtest;
   arma::rowvec ytrain, ytest;
+  double RMSETRAIN = 0.112415, RMSETEST = 0.171325;
 
-  // The RMSE are set according to the results obtained by the current
-  // implementation on the following dataset.
-  // RMSE are bad because the the prior imposed for the bayesian ridge 
-  // is not appropriate to recover sparse solution.
-  // y = Xw + noise, noise->Normal(0,1/beta), where beta=40 is the
-  // precision and w is a sparse vector to recover with the ten first elements
-  // non zero.
-  double RMSETRAIN = 6.66561e-05, RMSETEST = 37.0611;
-  
-  std::cout<< "\nSynthetic dataset.\n" 
+
+  std::cout<< "Synthetic dataset.\n" 
   	   << "Only the first ten features are non equal to 0."
   	   << std::endl;
-  data::Load("./data/synth_train.csv",Xtrain,false,true);  
+  data::Load("./data/synth_train.csv",X,false,true);  
   data::Load("./data/synth_test.csv",Xtest,false,true);  
-  data::Load("./data/synth_y_train.csv",ytrain,false,true);
+  data::Load("./data/synth_y_train.csv",y,false,true);
   data::Load("./data/synth_y_test.csv",ytest,false,true);  
 
   // Instanciate and train the estimator
@@ -52,6 +45,8 @@ BOOST_AUTO_TEST_CASE(BayesianRidgeRegressionTest)
   BOOST_REQUIRE_SMALL(estimator.Rmse(Xtrain,ytrain) - RMSETRAIN, 0.05);
   BOOST_REQUIRE_SMALL(estimator.Rmse(Xtest,ytest) - RMSETEST, 0.05);
 
+  // RMSETRAIN = 0.112415;
+  // RMSETEST = 0.171325;
+
+  
 }
-
-

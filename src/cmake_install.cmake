@@ -1,4 +1,4 @@
-# Install script for directory: /home/cmercier/Documents/c++/taton_mlpack/src
+# Install script for directory: /home/clementm/Documents/Documents/c++/bayesianlearning/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE STATIC_LIBRARY FILES "/home/cmercier/Documents/c++/taton_mlpack/src/libbayesianlearning.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE STATIC_LIBRARY FILES "/home/clementm/Documents/Documents/c++/bayesianlearning/src/libbayesianlearning.a")
 endif()
 

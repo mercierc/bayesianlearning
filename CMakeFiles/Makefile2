@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_SOURCE_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_BINARY_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 #=============================================================================
 # Target rules for target CMakeFiles/Ex1.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
 CMakeFiles/Ex1.dir/all: src/CMakeFiles/bayesianlearning.dir/all
 	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/depend
 	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=1,2 "Built target Ex1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles --progress-num=1,2 "Built target Ex1"
 .PHONY : CMakeFiles/Ex1.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/Ex1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Ex1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Ex1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 0
 .PHONY : CMakeFiles/Ex1.dir/rule
 
 # Convenience name for target.
@@ -121,7 +121,7 @@ src/preinstall:
 src/CMakeFiles/bayesianlearning.dir/all:
 	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/depend
 	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=3,4,5 "Built target bayesianlearning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles --progress-num=3,4,5 "Built target bayesianlearning"
 .PHONY : src/CMakeFiles/bayesianlearning.dir/all
 
 # Include target in all.
@@ -131,9 +131,9 @@ all: src/CMakeFiles/bayesianlearning.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/bayesianlearning.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bayesianlearning.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cmercier/Documents/c++/taton_mlpack/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles 0
 .PHONY : src/CMakeFiles/bayesianlearning.dir/rule
 
 # Convenience name for target.

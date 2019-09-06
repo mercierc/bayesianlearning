@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp" "/home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o"
-  "/home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp" "/home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/utils.cpp.o"
+  "/home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.cpp" "/home/clementm/Documents/Documents/c++/bayesianlearning/src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o"
+  "/home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.cpp" "/home/clementm/Documents/Documents/c++/bayesianlearning/src/CMakeFiles/bayesianlearning.dir/utils.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
