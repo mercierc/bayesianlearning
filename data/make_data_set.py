@@ -9,8 +9,8 @@ from regression_time import RVMRegression
 import matplotlib.pyplot as plt
 np.random.seed(8)
 
-N,M = 500,100
-Ntest,Mtest = 200,M
+N,M = 50,70
+Ntest,Mtest = 50,M
 s=10
 X = np.random.uniform(-10,10,N*M).reshape(N,M)
 Xtest = np.random.uniform(-10,10,Ntest*Mtest).reshape(Ntest,Mtest)
@@ -18,14 +18,18 @@ Xtest = np.random.uniform(-10,10,Ntest*Mtest).reshape(Ntest,Mtest)
 coef = np.zeros(M)
 coef[:s] = np.ceil(np.random.uniform(-5,5,s))
 
-noise = np.random.randn(N)*6
-noisetest = np.random.randn(Ntest)*6
-y = X.dot(coef)+noise
-ytest = Xtest.dot(coef)+noisetest
+beta = 40
+noise = np.random.normal(0,(1/beta)**0.5,N)
+noisetest = np.random.normal(0,(1/beta)**0.5,Ntest)
+
+y = X.dot(coef) + noise
+ytest = Xtest.dot(coef) + noisetest
+
 
 print('nxp = ',X.shape[0],"x",X.shape[1])
 start = time.time()
-bayes = RVMRegression(fit_intercept=True, scale=False, kernel='rbf').fit(X,y)
+bayes = BayesianRidge(fit_intercept=True, scale=False).fit(X,y)
+bayes2 = RVMRegression(fit_intercept=True, scale=False).fit(X,y)
 end = time.time()
 pred = bayes.predict(X)
 predtest = bayes.predict(Xtest)
@@ -39,7 +43,7 @@ rmsetest = ((predtest-ytest)**2).mean()**0.5
 print("rmsetrain = ",rmsetrain)
 print("rmsetest = ",rmsetest)
 
-
+#plt.plot(y,pred,'.'),plt.plot(ytest,predtest,'.'),plt.show()
 
 
 # Write X and y for the train

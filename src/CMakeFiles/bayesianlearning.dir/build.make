@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_SOURCE_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cmercier/Documents/c++/taton_mlpack
+CMAKE_BINARY_DIR = /home/clementm/Documents/Documents/c++/bayesianlearning
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/bayesianlearning.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/bayesianlearning.dir/flags.make
 
 src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o: src/CMakeFiles/bayesianlearning.dir/flags.make
 src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o: src/bayesridge.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o -c /home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o"
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o -c /home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.cpp
 
 src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp > CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.cpp > CMakeFiles/bayesianlearning.dir/bayesridge.cpp.i
 
 src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.cpp -o CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clementm/Documents/Documents/c++/bayesianlearning/src/bayesridge.cpp -o CMakeFiles/bayesianlearning.dir/bayesridge.cpp.s
 
 src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o.requires:
 
@@ -83,16 +83,16 @@ src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/bayesianlearning.dir/utils.cpp.o: src/CMakeFiles/bayesianlearning.dir/flags.make
 src/CMakeFiles/bayesianlearning.dir/utils.cpp.o: src/utils.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/bayesianlearning.dir/utils.cpp.o"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bayesianlearning.dir/utils.cpp.o -c /home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/bayesianlearning.dir/utils.cpp.o"
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/bayesianlearning.dir/utils.cpp.o -c /home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.cpp
 
 src/CMakeFiles/bayesianlearning.dir/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/bayesianlearning.dir/utils.cpp.i"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp > CMakeFiles/bayesianlearning.dir/utils.cpp.i
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.cpp > CMakeFiles/bayesianlearning.dir/utils.cpp.i
 
 src/CMakeFiles/bayesianlearning.dir/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/bayesianlearning.dir/utils.cpp.s"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmercier/Documents/c++/taton_mlpack/src/utils.cpp -o CMakeFiles/bayesianlearning.dir/utils.cpp.s
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/clementm/Documents/Documents/c++/bayesianlearning/src/utils.cpp -o CMakeFiles/bayesianlearning.dir/utils.cpp.s
 
 src/CMakeFiles/bayesianlearning.dir/utils.cpp.o.requires:
 
@@ -117,9 +117,9 @@ src/libbayesianlearning.a: src/CMakeFiles/bayesianlearning.dir/bayesridge.cpp.o
 src/libbayesianlearning.a: src/CMakeFiles/bayesianlearning.dir/utils.cpp.o
 src/libbayesianlearning.a: src/CMakeFiles/bayesianlearning.dir/build.make
 src/libbayesianlearning.a: src/CMakeFiles/bayesianlearning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbayesianlearning.a"
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && $(CMAKE_COMMAND) -P CMakeFiles/bayesianlearning.dir/cmake_clean_target.cmake
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bayesianlearning.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/clementm/Documents/Documents/c++/bayesianlearning/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libbayesianlearning.a"
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && $(CMAKE_COMMAND) -P CMakeFiles/bayesianlearning.dir/cmake_clean_target.cmake
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bayesianlearning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/bayesianlearning.dir/build: src/libbayesianlearning.a
@@ -132,10 +132,10 @@ src/CMakeFiles/bayesianlearning.dir/requires: src/CMakeFiles/bayesianlearning.di
 .PHONY : src/CMakeFiles/bayesianlearning.dir/requires
 
 src/CMakeFiles/bayesianlearning.dir/clean:
-	cd /home/cmercier/Documents/c++/taton_mlpack/src && $(CMAKE_COMMAND) -P CMakeFiles/bayesianlearning.dir/cmake_clean.cmake
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning/src && $(CMAKE_COMMAND) -P CMakeFiles/bayesianlearning.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/bayesianlearning.dir/clean
 
 src/CMakeFiles/bayesianlearning.dir/depend:
-	cd /home/cmercier/Documents/c++/taton_mlpack && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cmercier/Documents/c++/taton_mlpack /home/cmercier/Documents/c++/taton_mlpack/src /home/cmercier/Documents/c++/taton_mlpack /home/cmercier/Documents/c++/taton_mlpack/src /home/cmercier/Documents/c++/taton_mlpack/src/CMakeFiles/bayesianlearning.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/clementm/Documents/Documents/c++/bayesianlearning && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/clementm/Documents/Documents/c++/bayesianlearning /home/clementm/Documents/Documents/c++/bayesianlearning/src /home/clementm/Documents/Documents/c++/bayesianlearning /home/clementm/Documents/Documents/c++/bayesianlearning/src /home/clementm/Documents/Documents/c++/bayesianlearning/src/CMakeFiles/bayesianlearning.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/bayesianlearning.dir/depend
 
