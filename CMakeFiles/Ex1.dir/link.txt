@@ -1,1 +1,1 @@
-/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/Ex1.dir/src/Test.cpp.o  -o bin/Ex1 src/libbayesianlearning.a -lmlpack -larmadillo -lboost_serialization -lboost_program_options -lgomp -lpthread 
+/usr/bin/c++  -O3 -DNDEBUG  -rdynamic CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o  -o bin/Ex1 src/libbayesianlearning.a -lmlpack -larmadillo -lboost_serialization -lboost_program_options -lboost_unit_test_framework -lgomp -lpthread 

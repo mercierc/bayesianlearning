@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp
+/home/cmercier/Documents/c++/taton_mlpack/src/bayesian_ridge_test.cpp
 iostream
 -
 math.h
@@ -18,6 +18,8 @@ mlpack/core/data/load.hpp
 mlpack/core/kernels/linear_kernel.hpp
 -
 mlpack/core/kernels/gaussian_kernel.hpp
+-
+boost/test/unit_test.hpp
 -
 bayesridge.hpp
 /home/cmercier/Documents/c++/taton_mlpack/src/bayesridge.hpp

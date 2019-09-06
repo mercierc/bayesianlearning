@@ -10,7 +10,7 @@ include_directories("${PROJECT_SOURCE_DIR}/src")
 add_subdirectory(src)
 
 set(SRCS
-  ./src/Test.cpp
+  ./src/bayesian_ridge_test.cpp
   )
 
 set(EXECUTABLE_OUTPUT_PATH "bin")
@@ -25,6 +25,7 @@ target_link_libraries(Ex1 PUBLIC
   -larmadillo
   -lboost_serialization
   -lboost_program_options
+  -lboost_unit_test_framework
   OpenMP::OpenMP_CXX)  	
 
 install (TARGETS Ex1 DESTINATION bin)

@@ -182,32 +182,32 @@ bayesianlearning/fast:
 	$(MAKE) -f src/CMakeFiles/bayesianlearning.dir/build.make src/CMakeFiles/bayesianlearning.dir/build
 .PHONY : bayesianlearning/fast
 
-src/Test.o: src/Test.cpp.o
+src/bayesian_ridge_test.o: src/bayesian_ridge_test.cpp.o
 
-.PHONY : src/Test.o
+.PHONY : src/bayesian_ridge_test.o
 
 # target to build an object file
-src/Test.cpp.o:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.o
-.PHONY : src/Test.cpp.o
+src/bayesian_ridge_test.cpp.o:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o
+.PHONY : src/bayesian_ridge_test.cpp.o
 
-src/Test.i: src/Test.cpp.i
+src/bayesian_ridge_test.i: src/bayesian_ridge_test.cpp.i
 
-.PHONY : src/Test.i
+.PHONY : src/bayesian_ridge_test.i
 
 # target to preprocess a source file
-src/Test.cpp.i:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.i
-.PHONY : src/Test.cpp.i
+src/bayesian_ridge_test.cpp.i:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.i
+.PHONY : src/bayesian_ridge_test.cpp.i
 
-src/Test.s: src/Test.cpp.s
+src/bayesian_ridge_test.s: src/bayesian_ridge_test.cpp.s
 
-.PHONY : src/Test.s
+.PHONY : src/bayesian_ridge_test.s
 
 # target to generate assembly for a file
-src/Test.cpp.s:
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.s
-.PHONY : src/Test.cpp.s
+src/bayesian_ridge_test.cpp.s:
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.s
+.PHONY : src/bayesian_ridge_test.cpp.s
 
 # Help Target
 help:
@@ -223,9 +223,9 @@ help:
 	@echo "... Ex1"
 	@echo "... install"
 	@echo "... bayesianlearning"
-	@echo "... src/Test.o"
-	@echo "... src/Test.i"
-	@echo "... src/Test.s"
+	@echo "... src/bayesian_ridge_test.o"
+	@echo "... src/bayesian_ridge_test.i"
+	@echo "... src/bayesian_ridge_test.s"
 .PHONY : help
 
 

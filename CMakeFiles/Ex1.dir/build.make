@@ -57,38 +57,38 @@ include CMakeFiles/Ex1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Ex1.dir/flags.make
 
-CMakeFiles/Ex1.dir/src/Test.cpp.o: CMakeFiles/Ex1.dir/flags.make
-CMakeFiles/Ex1.dir/src/Test.cpp.o: src/Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ex1.dir/src/Test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ex1.dir/src/Test.cpp.o -c /home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o: CMakeFiles/Ex1.dir/flags.make
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o: src/bayesian_ridge_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cmercier/Documents/c++/taton_mlpack/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o -c /home/cmercier/Documents/c++/taton_mlpack/src/bayesian_ridge_test.cpp
 
-CMakeFiles/Ex1.dir/src/Test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ex1.dir/src/Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp > CMakeFiles/Ex1.dir/src/Test.cpp.i
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cmercier/Documents/c++/taton_mlpack/src/bayesian_ridge_test.cpp > CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.i
 
-CMakeFiles/Ex1.dir/src/Test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ex1.dir/src/Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmercier/Documents/c++/taton_mlpack/src/Test.cpp -o CMakeFiles/Ex1.dir/src/Test.cpp.s
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cmercier/Documents/c++/taton_mlpack/src/bayesian_ridge_test.cpp -o CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.s
 
-CMakeFiles/Ex1.dir/src/Test.cpp.o.requires:
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.requires:
 
-.PHONY : CMakeFiles/Ex1.dir/src/Test.cpp.o.requires
+.PHONY : CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.requires
 
-CMakeFiles/Ex1.dir/src/Test.cpp.o.provides: CMakeFiles/Ex1.dir/src/Test.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/Test.cpp.o.provides.build
-.PHONY : CMakeFiles/Ex1.dir/src/Test.cpp.o.provides
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.provides: CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Ex1.dir/build.make CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.provides.build
+.PHONY : CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.provides
 
-CMakeFiles/Ex1.dir/src/Test.cpp.o.provides.build: CMakeFiles/Ex1.dir/src/Test.cpp.o
+CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.provides.build: CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o
 
 
 # Object files for target Ex1
 Ex1_OBJECTS = \
-"CMakeFiles/Ex1.dir/src/Test.cpp.o"
+"CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o"
 
 # External object files for target Ex1
 Ex1_EXTERNAL_OBJECTS =
 
-bin/Ex1: CMakeFiles/Ex1.dir/src/Test.cpp.o
+bin/Ex1: CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o
 bin/Ex1: CMakeFiles/Ex1.dir/build.make
 bin/Ex1: src/libbayesianlearning.a
 bin/Ex1: /usr/lib/gcc/x86_64-linux-gnu/7/libgomp.so
@@ -102,7 +102,7 @@ CMakeFiles/Ex1.dir/build: bin/Ex1
 
 .PHONY : CMakeFiles/Ex1.dir/build
 
-CMakeFiles/Ex1.dir/requires: CMakeFiles/Ex1.dir/src/Test.cpp.o.requires
+CMakeFiles/Ex1.dir/requires: CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o.requires
 
 .PHONY : CMakeFiles/Ex1.dir/requires
 

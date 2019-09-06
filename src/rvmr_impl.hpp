@@ -218,7 +218,7 @@ void RVMR<KernelType>::Predict(const arma::mat& points,
 
 
 template<typename KernelType>
-float RVMR<KernelType>::Rmse(const arma::mat& data,
+double RVMR<KernelType>::Rmse(const arma::mat& data,
 		 const arma::rowvec& responses) const
 {
   arma::rowvec predictions;

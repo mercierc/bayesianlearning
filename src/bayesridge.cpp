@@ -135,7 +135,7 @@ void BayesianRidge::Predict(const arma::mat& points,
     }
 }
 
-float BayesianRidge::Rmse(const arma::mat& data,
+double BayesianRidge::Rmse(const arma::mat& data,
 			  const arma::rowvec& responses) const
 {
   arma::rowvec predictions;

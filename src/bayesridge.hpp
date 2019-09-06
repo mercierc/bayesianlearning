@@ -70,7 +70,7 @@ public:
    * @param responses A vector of targets.
    * @return RMSE
    **/
-  float Rmse(const arma::mat& data,
+  double Rmse(const arma::mat& data,
 	     const arma::rowvec& responses) const;
 
   /**

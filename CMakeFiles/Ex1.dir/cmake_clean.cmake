@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Ex1.dir/src/Test.cpp.o"
+  "CMakeFiles/Ex1.dir/src/bayesian_ridge_test.cpp.o"
   "bin/Ex1.pdb"
   "bin/Ex1"
 )
